@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/css/themes/splide-skyblue.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/js/splide.min.js"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <header class="header">
+     
+        <nav class="headerNav">
+          <div class="menuButons"> 
+             <img src="./images/Group 4.svg" alt="" class="logo" />
+           <label for="select" class="select">
+    <!-- Этот инпут отвечает за закрытие селекта при клике за его пределами. Также этот инпут является стандартным значением нашего селекта -->
+    <input type="radio" name="list" value="not_changed" id="bg" checked />
+    <!-- Этот инпут является переключателем селекта в состояние "открыт" -->
+    <input type="radio" name="list" value="not_changed" id="select">
+    <!-- Этот лейбел используется для создания подложки, клик по которой приводит к закрытию селекта -->
+    <label class="bg" for="bg"></label>
+    <!-- Этот див - список параметров селекта, где #text - то, что выводится, когда ничего не выбрано -->
+    <div class="items">
+      <!-- Инпут, при клике на который происходит выбор параметра и сворачивание селекта -->
+      <input type="radio" name="list" value="first_value" id="list[0]">
+      <!-- Название параметра -->
+      <label for="list[0]">Числовий</label>
+      <!-- Инпут, при клике на который происходит выбор параметра и сворачивание селекта[1] -->
+      <input type="radio" name="list" value="second_value" id="list[1]">
+      <!-- Инпут, при клике на который происходит выбор параметра и сворачивание селекта[1] -->
+      <label for="list[1]">Ігровий </label>
+     
+      <!-- Текст селекта по умолчанию. Выводится тогда, когда ничего не выбрано -->
+      <span id="text">Інтерактив</span>
+    </div>
+</label>
+            <div class="MB2">
+            <a href="" class="headerNavButton">Наша команда</a>
+            <a href="" class="headerNavButton">Контакти</a>
+            </div>
+          </div>
+        </nav>
+      
+  
+       
+  
+        <div class="buttons">
+          <img src="./images/Group 71.svg" alt="" class="tema" />
+          <h3 class="menuTitle">Вітаємо, User!</h3>
+        </div>
+      </header>
+      <section class="sacondSection">
+        <div class="content">
+          <div class="topLine"></div>
+          <h2 class="title">Вгадай число, яке загадав комп’ютер</h2>
+          <div class="con">
+            <form class="search-form inp">
+              <label>
+                <input
+                  type="text"
+                  class="player-number searchInput"
+                  name="playerNumber"
+                  placeholder="Введіть число(1-10)"
+                />
+              </label>
+              <button
+                type="submit"
+                class="search-button searchButton InputIcon search-image"
+              >
+                <img
+                  width="20"
+                  height="20"
+                  class="search-image InputIcon"
+                  src="./images/Group 104 (1).svg"
+                  alt="#"
+                />
+              </button>
+            </form>
+  
+            <h3 class="subtitle">Вітаю, ви вгадали число! (number)</h3>
+          </div>
+          <div class="bottomLine"></div>
+        </div>
+      </section>
+      <section class="thirdSection">
+        <div class="content">
+          <h2 class="title">Камінь - ножиці - папір</h2>
+          <div class="con2">
+            <div class="miniGameImages">
+              <ul class="list">
+                <li class="lii">
+                  <button id="stone" style="border: none" class="pick-one stone">
+                    <img
+                      src="./images/Frame 127.svg"
+                      alt="#"
+                      class="stone chouse"
+                    />
+                  </button>
+                </li>
+                <li>
+                  <button
+                    id="scissors"
+                    style="border: none"
+                    class="pick-one scissors"
+                  >
+                    <img
+                      src="./images/Frame 126.svg"
+                      alt="#"
+                      class="scissors chouse"
+                    />
+                  </button>
+                </li>
+                <li>
+                  <button id="paper" style="border: none" class="pick-one paper">
+                    <img
+                      src="./images/Frame 128.svg"
+                      alt="3"
+                      class="paper chouse"
+                    />
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="score acd">
+              <p class="allScore sch">Рахунок:</p>
+              <p class="sch">Комп'ютер - <span class="computer">0</span></p>
+              <p class="sch">Ви - <span class="you">0</span></p>
+            </div>
+          </div>
+          <h3 class="youWin">Ви виграли раунд!</h3>
+
+          <div class="bottomLine"></div>
+        </div>
+      </section>
+      <section class="fourthSection">
+        <div class="content">
+          <h2 class="title">Калькулятор часу</h2>
+          <div class="con3">
+            <div class="inp">
+              <input
+                class="searchInput"
+                type="search"
+                id="search"
+                placeholder="Введіть число"
+              />
+              <img src="./images/Group 104.svg" alt="#" class="inputIcon" />
+            </div>
+            <img src="./images/Vector 220.svg" alt="#" class="fourthImg" />
+            <h2 class="time">3 дн. 15:45:01</h2>
+          </div>
+          <div class="bottomLine"></div>
+        </div>
+      </section>
+      <section class="football">
+        <h2 class="title">Футбол</h2>
+        <div class="content">
+          <div class="filed">
+          <div class="ball"><img src="./images/football (1) 1.svg" alt="" class="ballicon"></div>
+          </div>
+      
+          
+          <div class="bottomLine"></div>
+        </div>
+      </section>
+      <section class="ourTeam">
+        <h2 class="title">Наша команда</h2>
+        <div class="content">
+          <section
+            id="main-slider"
+            class="splide"
+            aria-label="My Awesome Gallery"
+          >
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img
+                    src=""
+                    alt=""
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src=""
+                    alt=""
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src=""
+                    alt=""
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src=""
+                    alt=""
+                  />
+                </li>
+              </ul>
+            </div>
+          </section>
+  
+
+  
+          <h2 class="title">Ім’я студента</h2>
+          <h3 class="title">Інформація про роботу, яку він/вона виконав/ла</h3>
+          <div class="controls"></div>
+        </div>
+      </section>
+  
+      <script src="./main.js"></script>
+    </body>
+  </html>
+ 
+    </main>
+   
